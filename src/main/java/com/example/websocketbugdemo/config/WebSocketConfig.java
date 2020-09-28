@@ -50,17 +50,17 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @EventListener
     public void handleSubscribeEvent(SessionSubscribeEvent event) {
-        log.info("Successfully completed subscription for username: bkent");
+        log.info("Successfully completed subscription for username: testUser");
     }
 
     @EventListener
     public void handleConnectEvent(SessionConnectEvent event) {
-        log.info("Successfully established ws connection for username: bkent");
+        log.info("Successfully established ws connection for username: testUser");
     }
 
     @EventListener
     public void handleDisconnectEvent(SessionDisconnectEvent event) {
-        log.info("Successfully removed ws connection for username: bkent");
+        log.info("Successfully removed ws connection for username: testUser");
     }
 
     @Override
